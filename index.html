@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Raleway&family=Texturina:wght@300&display=swap" rel="stylesheet">
+    <title>Skundo pateikimo forma</title>
+  </head>
+  <body>
+    <form action="submited.html" method="get" required>
+    <h1>Skundo pateikimo forma</h1>
+  <label for="Vardas"></label>
+  <input id="Vardas" type="Vardas" name="VARDAS" placeholder="Vardas" size="40" required>
+<br><br>
+<label for="Pavardė"></label>
+<input id="Pavardė" type="Pavardė" name="PAVARDĖ" placeholder="Pavardė" size="40" required>
+<br><br>
+  <label for="Elektroninio pašto adresas"></label>
+  <input id="Elektroninio pašto adresas" type="Elektroninio pašto adresas" name="ELEKTRONINIO PAŠTO ADRESAS" placeholder="Elektroninio pašto adresas" size="40" required>
+  <br><br>
+  <label for="Telefono numeris"></label>
+  <input type="Telefono numeris" id="Telefono numeris" name="TELEFONO NUMERIS" placeholder="Telefono numeris"
+  pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}" required><br>
+  <small>Format: (1 2)-345-6789</small>
+<br><br>
+<label for="Miestas">Parduotuvės vieta</label>
+  <select name="Parduotuvės vieta">
+  <option value="#" hidden>Miestas</option>
+  <option value="Vilnius">Vilnius</option>
+  <option value="Kaunas">Kaunas</option>
+  <option value="Klaipeda">Klaipeda</option>
+  <option value="Šiauliai">Šiauliai</option>
+  <option value="Panevėžys">Panevėžys</option>
+  <option value="Alytus">Alytus</option>
+</select><br><br>
+  <label for="Apsilankymo laikas">Apsilankymo laikas</label>
+  <input type="date" id="start" name="trip-start" value="2021-01-01">
+  <br><br>
+  <label for="Nusiskundimo tipas">Nusiskundimo tipas</label>
+  <select name="Nusiskundimo tipas">
+  <option value="#" hidden>Tipas</option>
+  <option value="Prekės galiojimo laikas">Prekės galiojimo laikas</option>
+  <option value="Prekės pakuotės pažeidimas">Prekės pakuotės pažeidimas</option>
+  <option value="Šviežumo kokybė">Šviežumo kokybė</option>
+  <option value="Aptarnaviams">Aptarnavimas</option>
+  <option value="Kita">Kita</option>
+  </select>
+  <br><br>
+  <label for="Aprašymas">Aprašymas</label>
+  <textarea id="Aprašymas" name="Aprašymas" rows="4" cols="30"></textarea><br><br>
+  <label for="Įkelti failą">Įkelti failą</label>
+  <input type="file" id="avatar"
+  accept="image/jpeg, image/gif, image/x-photo-cd">
+  <br><br>
+  <p><strong>Sutikimas su privatumo politika:</strong></p>
+  <div class="sutinku">
+    <input type="checkbox" id="Nesutinku" name="Sutiknu">
+    <label for="Sutinku">Sutinku</label>
+  </div>
+  <div>
+  <input type="checkbox" id="Nesutinku" name="Nesutinku">
+  <label for="nesutinku">Nesutinku</label>
+</div><br>
+      <button type="submit form" name="button">
+    <span>Siųsti</span>
+  </button>
+  </form>
+  </body>
+</html>
